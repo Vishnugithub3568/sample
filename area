@@ -1,0 +1,28 @@
+import java.util.Scanner; // Import the Scanner class for user input
+    
+public class CylinderArea {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); // Create a Scanner object
+
+        // Prompt user for radius
+        System.out.print("Enter the radius of the cylinder: ");
+        double radius = input.nextDouble(); // Read radius input
+
+        // Prompt user for height
+        System.out.print("Enter the height of the cylinder: ");
+        double height = input.nextDouble(); // Read height input
+
+        // Calculate total surface area
+        double totalSurfaceArea = 2 * Math.PI * radius * (radius + height);
+
+        // Calculate curved surface area
+        double curvedSurfaceArea = 2 * Math.PI * radius * height;
+
+        // Display results
+        System.out.println("Total Surface Area of the cylinder: " + totalSurfaceArea);
+        System.out.println("Curved Surface Area of the cylinder: " + curvedSurfaceArea);
+
+        input.close(); // Close the scanner
+    }
+}
